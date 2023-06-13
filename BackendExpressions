@@ -1,1 +1,2 @@
- ${runtimeService.createProcessInstanceBuilder().processDefinitionKey("myCaseKey").variable("myvariable", "something").start()}
+//starting a new process using taskListener
+${runtimeService.createProcessInstanceBuilder().processDefinitionKey("myCaseKey").variable("myvariable", "something").start()}

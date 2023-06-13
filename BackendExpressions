@@ -1,0 +1,1 @@
+ ${runtimeService.createProcessInstanceBuilder().processDefinitionKey("myCaseKey").variable("myvariable", "something").start()}

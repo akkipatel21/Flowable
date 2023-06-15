@@ -1,0 +1,26 @@
+import org.flowable.task.api.Task;
+import org.flowable.engine.TaskService
+import org.flowable.task.api.TaskInfo;
+import org.flowable.engine.RuntimeService;
+
+String taskId = execution.getVariable("taskId");
+List<String> participantUserIds = execution.getVariable("pyIds");
+String processId = execution.getVariable("processId");
+  	System.out.println("!!!!"+processId)
+
+// Get the TaskService instance
+TaskService taskService = processEngine.getTaskService();
+
+// Get the task using the task ID
+Task task = taskService.createTaskQuery().taskId(taskId).singleResult();
+System.out.println("********"+participantUserIds)
+// Add participants to the task
+for (String participantUserId : participantUserIds) {
+  	System.out.println("********"+participantUserId)
+ 	//taskService.addCandidateUser(task.getId(), participantUserId);
+  	//taskService.setAssignee(task.getId(), "akashb21");
+  //runtimeService.setVariable(processId, "task2candidate", "eaas0001");
+   taskService.addUserIdentityLink(task.getId(), participantUserId, "candidate");
+}
+//execution.setVariable("ids", "eaas001")
+

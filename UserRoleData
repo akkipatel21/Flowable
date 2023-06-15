@@ -1,0 +1,29 @@
+import com.fasterxml.jackson.databind.ObjectMapper
+
+JsonNode extensionApprover = new ObjectMapper().readTree(/
+[
+  {
+    "extensionApprover":"DM"
+  }
+]
+/)
+
+JsonNode assignment = new ObjectMapper().readTree(/
+[
+  {
+    "role":"JEA",
+    "pyIds":["akash21","sarang","gary1919"]
+  },
+  {
+    "role":"JE",
+    "pyIds":["JE1","JE2","JE3"]
+  },
+  {
+    "role":"DM",
+    "pyIds":["Haris","eaas0001","Dm2"]
+  }
+]
+/)
+
+execution.setVariable("extensionApprover", extensionApprover);
+execution.setVariable("assignment", assignment);]]></script>

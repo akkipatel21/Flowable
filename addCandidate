@@ -24,3 +24,36 @@ for (String participantUserId : participantUserIds) {
 }
 //execution.setVariable("ids", "eaas001")
 
+
+
+import org.flowable.task.api.Task;
+import org.flowable.engine.TaskService
+import org.flowable.task.api.TaskInfo;
+import org.flowable.engine.RuntimeService;
+
+
+print"lolololololo"
+def participantUserIds  = execution.getVariable("pyids");
+String taskId = execution.getVariable("taskId");
+//List<String> participantUserIds = execution.getVariable("pyIds");
+String processId = execution.getVariable("processId");
+System.out.println("!!!!"+processId)
+
+// Get the TaskService instance
+TaskService taskService = processEngine.getTaskService();
+
+// Get the task using the task ID
+Task task = taskService.createTaskQuery().taskId(taskId).singleResult();
+System.out.println("***Class*****"+participantUserIds.getClass())
+// Add participants to the task
+for (String participantUserId : participantUserIds) {
+  
+  
+  
+  
+ 	//String cleanedUserId = participantUserId;
+  	System.out.println("***class of indi*****"+participantUserId.getClass())
+  	System.out.println("***participantUserId*****"+participantUserId)
+ 	taskService.addUserIdentityLink(task.getId(), participantUserId, "candidate");
+}
+//execution.setVariable("ids", "eaas0001")

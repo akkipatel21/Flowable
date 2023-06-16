@@ -24,36 +24,31 @@ for (String participantUserId : participantUserIds) {
 }
 //execution.setVariable("ids", "eaas001")
 
+============================================updated===============================================
 
-
-import org.flowable.task.api.Task;
+import org.flowable.task.api.Task
 import org.flowable.engine.TaskService
-import org.flowable.task.api.TaskInfo;
-import org.flowable.engine.RuntimeService;
+import org.flowable.engine.RuntimeService
 
 
-print"lolololololo"
-def participantUserIds  = execution.getVariable("pyids");
-String taskId = execution.getVariable("taskId");
-//List<String> participantUserIds = execution.getVariable("pyIds");
-String processId = execution.getVariable("processId");
-System.out.println("!!!!"+processId)
+def participantUserIdsNode = execution.getVariable("pyids") as com.fasterxml.jackson.databind.node.ArrayNode
+List<String> participantUserIds = participantUserIdsNode.collect { it.asText() }
+
+String taskId = execution.getVariable("taskId") as String
+String processId = execution.getVariable("processId") as String
+
 
 // Get the TaskService instance
-TaskService taskService = processEngine.getTaskService();
+TaskService taskService = processEngine.getTaskService()
 
 // Get the task using the task ID
-Task task = taskService.createTaskQuery().taskId(taskId).singleResult();
-System.out.println("***Class*****"+participantUserIds.getClass())
+Task task = taskService.createTaskQuery().taskId(taskId).singleResult()
+println "******** $participantUserIds"
+
 // Add participants to the task
 for (String participantUserId : participantUserIds) {
-  
-  
-  
-  
- 	//String cleanedUserId = participantUserId;
-  	System.out.println("***class of indi*****"+participantUserId.getClass())
-  	System.out.println("***participantUserId*****"+participantUserId)
- 	taskService.addUserIdentityLink(task.getId(), participantUserId, "candidate");
+   	taskService.addUserIdentityLink(task.getId(), participantUserId, "candidate");
 }
-//execution.setVariable("ids", "eaas0001")
+
+// execution.setVariable("ids", "eaas001")
+

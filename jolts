@@ -1,0 +1,16 @@
+// simple jolt converting list to array 
+sql o/p : list
+
+I/P
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "*": {
+        "PY_Id": "PY_Ids"
+      }
+    }
+  }
+]
+
+O/p: {"PY_Ids":["eaas0001","sarang"]}

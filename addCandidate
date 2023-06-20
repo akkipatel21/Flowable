@@ -84,8 +84,7 @@ Task task = taskService.createTaskQuery().taskId(taskId).singleResult()
 
 // Add participants to the task
 for (String participantUserId : participantUserIds) {
-  println"@@@@@@@@@@@@@@@participantUserId::$participantUserId"
-  taskService.addUserIdentityLink(task.getId(), participantUserId, "candidate")
+   taskService.addUserIdentityLink(task.getId(), participantUserId, "candidate")
 }
 
 

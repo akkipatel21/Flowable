@@ -27,39 +27,6 @@ for (String participantUserId : participantUserIds) {
 
 ================================================================================================================================
 
-
-
-import org.flowable.task.api.Task
-import org.flowable.engine.TaskService
-import org.flowable.engine.RuntimeService
-import com.fasterxml.jackson.databind.ObjectMapper
-
-// Retrieve the "output" variable from execution
-def output = execution.getVariable("output")
-
-// Create an instance of ObjectMapper
-ObjectMapper mapper = new ObjectMapper()
-
-// Convert "output.data" to a tree-like structure
-def entities = mapper.valueToTree(output.data)
-
-// Retrieve the value of "PY_Ids" from the first element of "entities"
-def pyIdsNode = entities[0].get("PY_Ids")
-
-// Convert "pyIdsNode" to a List of participantUserIds
-def participantUserIds = mapper.convertValue(pyIdsNode, List)
-
-// Get the TaskService instance
-TaskService taskService = processEngine.getTaskService()
-
-// Get the task using the task ID
-Task task = taskService.createTaskQuery().taskId(taskId).singleResult()
-
-// Add participants to the task
-for (String participantUserId : participantUserIds) {
-   taskService.addUserIdentityLink(task.getId(), participantUserId, "candidate")
-}
-
 import org.flowable.task.api.Task;
 import org.flowable.engine.TaskService;
 import org.flowable.engine.RuntimeService;

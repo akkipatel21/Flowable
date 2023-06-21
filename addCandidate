@@ -67,6 +67,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 // Retrieve the "output" variable from execution
 def output = execution.getVariable("output");
+String taskId = execution.getVariable("taskId") as String
 
 // Create an instance of ObjectMapper
 ObjectMapper mapper = new ObjectMapper();

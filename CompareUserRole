@@ -30,7 +30,7 @@ assignment.each { node ->
 
 
 //String commaSeparatedList = pyIds.join(", ")
-//println "()()()()()(): $commaSeparatedList"
+//println "OP: $commaSeparatedList"
 
 // Set the pyIds value as a new variable in the execution
 execution.setVariable("pyIds", pyIds)

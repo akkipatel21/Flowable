@@ -36,8 +36,9 @@ for (JsonNode milestone : milestonesArray) {
             for (JsonNode prevMilestone : milestonesArray) {
                 String prevMilestoneName = prevMilestone.get("MILESTONE_NAME").asText();
                 String prevMilestoneType = prevMilestone.get("TYPE").asText();
+                String prevMilestoneStatus = prevMilestone.get("STATUS").asText();
                 
-                if (predecessorName.equals(prevMilestoneName) && "RELATIVE".equals(prevMilestoneType)) {
+                if (predecessorName.equals(prevMilestoneName) && "RELATIVE".equals(prevMilestoneType) && "INACTIVE".equals(prevMilestoneStatus)) {
                     int prevDuration = prevMilestone.get("DURATION").asInt();
                     int prevDaysExtension = prevMilestone.get("DAYS_EXTENSION").asInt();
                     relativeDays += prevDuration + prevDaysExtension;

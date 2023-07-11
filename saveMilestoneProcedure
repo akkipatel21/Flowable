@@ -1,0 +1,70 @@
+CREATE DEFINER=`root`@`%` PROCEDURE `Save_Milestones`(IN milestonesIN JSON)
+BEGIN
+  -- Declare iterator variables to use them later in the loop
+  DECLARE i INT DEFAULT 0;  -- MILESTONE array
+  DECLARE j INT DEFAULT 0;  -- NOTIFICATION_MANAGEMENT under each MILESTONE
+
+  -- Rollback if an error occurs
+  DECLARE EXIT HANDLER FOR SQLEXCEPTION
+  BEGIN
+    SHOW ERRORS;
+    ROLLBACK;
+  END;
+
+  START TRANSACTION;
+
+  -- Delete existing data from the MILESTONE and NOTIFICATION_MANAGEMENT tables
+  DELETE FROM MILESTONE;
+  DELETE FROM NOTIFICATION_MANAGEMENT;
+
+  -- Extract the milestones array from the provided JSON
+  SET @milestones = JSON_EXTRACT(milestonesIN, '$.milestones');
+  SET @milestones_length = JSON_LENGTH(@milestones);
+
+  WHILE i < @milestones_length DO
+    -- Retrieve current Milestone from milestones array
+    SET @Milestone = (JSON_EXTRACT(@milestones, CONCAT('$[', i, ']')));
+    SET @Milestone_Name = JSON_UNQUOTE(JSON_EXTRACT(@Milestone, '$.milestoneName'));
+    SET @duration = JSON_UNQUOTE(JSON_EXTRACT(@Milestone, '$.duration'));
+    SET @status = JSON_UNQUOTE(JSON_EXTRACT(@Milestone, '$.status'));
+
+    -- Check if the Milestone_Id already exists
+     -- Insert into MILESTONE
+	 IF(@Milestone_Id IS NULL) THEN
+		 -- get max id and add one to create new
+        -- SET @Milestone_Id = (SELECT MAX(ID) FROM MILESTONE) + 1;
+         SET @Milestone_Id = (SELECT COALESCE(MAX(ID), 0) + 1 FROM MILESTONE);
+		 -- SELECT concat('Milestone_Id= ', @Milestone_Id); 
+            
+		 INSERT INTO MILESTONE (ID, MILESTONE_NAME, DURATION, STATUS)
+		 VALUES (@Milestone_Id, @Milestone_Name, @duration, @status);
+	 ELSE
+         INSERT INTO MILESTONE (ID, MILESTONE_NAME, DURATION)
+		 VALUES (@Milestone_Id, @Milestone_Name, @days);
+	 END IF; 
+    
+     
+    -- Retrieve the notifications array under the current milestone
+    SET @notifications = JSON_EXTRACT(@Milestone, '$.notifiactions');
+    SET @notifications_length = JSON_LENGTH(@notifications);
+    SET j = 0; -- Reset the notification iterator variable
+
+    WHILE j < @notifications_length DO
+      -- Retrieve current notification from notifications array
+      SET @notification = (JSON_EXTRACT(@notifications, CONCAT('$[', j, ']')));
+      SET @notificationSendBefore = JSON_UNQUOTE(JSON_EXTRACT(@notification, '$.notificationSendBefore'));
+      SET @notificationName = JSON_UNQUOTE(JSON_EXTRACT(@notification, '$.notificationName'));
+	
+      -- Insert the notification data into the NOTIFICATION_MANAGEMENT table
+      INSERT INTO NOTIFICATION_MANAGEMENT (MILESTONE_ID, NOTIFY_BEFORE_DAYS,NOTIFICATION_NAME)
+      VALUES (@Milestone_Id, @notificationSendBefore, @notificationName);
+
+      SET j = j + 1; -- Increment the notification iterator variable
+    END WHILE;
+
+    SET i = i + 1; -- Increment the milestone iterator variable
+    SET @Milestone_Id = NULL; -- Reset the Milestone_Id variable for the next iteration
+  END WHILE;
+
+  COMMIT;
+END

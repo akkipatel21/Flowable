@@ -11,6 +11,7 @@ BEGIN
     ROLLBACK;
   END;
 
+
   START TRANSACTION;
 
   -- Delete existing data from the MILESTONE and NOTIFICATION_MANAGEMENT tables

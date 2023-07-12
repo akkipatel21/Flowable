@@ -43,7 +43,6 @@ BEGIN
 		 VALUES (@Milestone_Id, @Milestone_Name, @days);
 	 END IF; 
     
-     
     -- Retrieve the notifications array under the current milestone
     SET @notifications = JSON_EXTRACT(@Milestone, '$.notifiactions');
     SET @notifications_length = JSON_LENGTH(@notifications);

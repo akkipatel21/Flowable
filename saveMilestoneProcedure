@@ -4,11 +4,11 @@ BEGIN
   DECLARE i INT DEFAULT 0;  -- MILESTONE array
   DECLARE j INT DEFAULT 0;  -- NOTIFICATION_MANAGEMENT under each MILESTONE
 
-  -- Rollback if an error occurs
+  --  Rollback if an error occurs
   DECLARE EXIT HANDLER FOR SQLEXCEPTION
   BEGIN
     SHOW ERRORS;
-    ROLLBACK; 
+    ROLLBACK;
   END;
 
   START TRANSACTION;

@@ -58,3 +58,27 @@ BEGIN
   
   COMMIT;
 END
+
+	
+--CALL Save_Notifications('
+{
+  "notifications": [
+    {
+      "notificationName": "NOTIFICATION 1",
+      "template": "template 1",
+      "users": [
+          "akash","milan"
+        
+      ]
+    },
+    {
+      "notificationName": "NOTIFICATION 2",
+      "template": "template 2",
+      "users": [
+          "akash","sarang"
+        
+      ]
+    }
+  ]
+}
+');

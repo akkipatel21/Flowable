@@ -13,7 +13,6 @@ def milestoneObj = '[{"day":2,"Milestone":[{"ID":1,"MILESTONE_NAME":"Milestone 1
 
 ObjectMapper mapper = new ObjectMapper();
 JsonNode milestoneNode = mapper.readTree(milestoneObj);
-
 ArrayNode milestonesArray = (ArrayNode) milestoneNode.get(0).get("Milestone");
 
 List<ObjectNode> milestoneList = new ArrayList<>();

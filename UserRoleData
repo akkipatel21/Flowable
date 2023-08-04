@@ -2,7 +2,7 @@
 
 JsonNode extensionApprover = new ObjectMapper().readTree(/
 [
-  {
+  { 
     "extensionApprover":"DM"
   }
 ]

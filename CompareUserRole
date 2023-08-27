@@ -6,7 +6,7 @@ JsonNode extensionApprover = execution.getVariable("extensionApprover")
 // Retrieve the assignment value from the execution variable
 JsonNode assignment = execution.getVariable("assignment")
 
-// Extract the extensionApprover value 
+// Extract the extensionApprover value
 String approver = extensionApprover.get(0).get("extensionApprover").asText()
 
 // Find the matching role in the assignment and retrieve the pyIds

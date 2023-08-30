@@ -1,0 +1,29 @@
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.databind.node.ObjectNode
+
+def responder1 = [
+    pyId: "akashb21",
+    email: "akashb21@yorku.ca",
+    firstName: "Akash",
+    lastName: "Patel",
+    fullName: "Akash Patel",
+    affiliation: "USA",
+    pcn: 0,
+    isYUSA1: true,
+    isYUSA2: false,
+    isCPM: false,
+    isIncumbant: true,
+    isDM: false,
+    isJEConsultant: false,
+    isJEStaff: false,
+    isRequestor: "false"
+]
+
+def objectMapper = new ObjectMapper()
+
+// Convert the Groovy map to an ObjectNode
+ObjectNode responder = objectMapper.valueToTree(responder1)
+
+println(responder.getClass())  // This will print "class com.fasterxml.jackson.databind.node.ObjectNode"
+
+execution.setVariable('responder', responder)

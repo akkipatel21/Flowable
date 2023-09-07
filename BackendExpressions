@@ -4,6 +4,7 @@ ${runtimeService.createProcessInstanceBuilder().processDefinitionKey("jOB_E_Proc
 
 //setting a variablr in a flow (Arrow) with turnary operation
 ${execution.setVariable('role', execution.getVariable('condition') == 'someValue' ? 'val1' : 'val2')}
+${execution.setVariable('role','DM')}
 
 //assigning a responder and JEC as assignee in a JOB E joint submission
 ${responder.pyId}

@@ -23,5 +23,4 @@ RB 3694 JIM 9242/G6 55/20 145 2P
  "array": [
     "3c",
     "3d"
-  ]
-{{ flw.in(array, '3c') }}
+  ]           -----    {{ flw.in(array, '3c') }}

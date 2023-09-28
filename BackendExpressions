@@ -18,3 +18,7 @@ RB 3694 JIM 9242/G6 55/20 145 2P
 //do sum of subform elements and compare 
 //{{flw.sum(flw.mapAttr(addtionalDuties,'percentage')) == flw.sum(flw.mapAttr(eliminatedDuties,'percentage'))}}
 {{  flw.sum(flw.mapAttr(SoSCF.addtionalDuties,'percentage'))<='100' &&   flw.sum(flw.mapAttr(SoSCF.addtionalDuties,'percentage')) == flw.sum(flw.mapAttr(SoSCF.eliminatedDuties,'percentage')) && flw.exists(SoSCF.prCmtForJobChange) && flw.exists(SoSCF.prCmtForAdditionalDetails) && flw.exists(SoSCF.prCmtForRevision) }}
+
+//check if there is an element available in the list
+
+{{ flw.in(array, '3c') }}

@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode
 JsonNode extensionApprover = execution.getVariable("extensionApprover")
 M
 // Retrieve the assignment value from the execution variable
-JsonNode assignment = execution.getVariable("assignment")
+JsonNode assignment = execution.getVariable("assignment")NM
 
 // Extract the extensionApprover value
 String approver = extensionApprover.get(0).get("extensionApprover").asText()

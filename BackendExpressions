@@ -1,7 +1,7 @@
-gg//starting a new process using taskListener
+//starting a new process using taskListener
 ${runtimeService.createProcessInstanceBuilder().processDefinitionKey("myCaseKey").variable("myvariable", "something").start()}
 ${runtimeService.createProcessInstanceBuilder().processDefinitionKey("jOB_E_Process_StartingProcessUsingTaskListeners").variable("pyIds", pyIds).variable("taskId", task.getId()).start()}
-dd
+
 //setting a variablr in a flow (Arrow) with turnary operation
 ${execution.setVariable('role', execution.getVariable('condition') == 'someValue' ? 'val1' : 'val2')}
 ${execution.setVariable('isEntry','true')}

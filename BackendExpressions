@@ -5,16 +5,14 @@ ${runtimeService.createProcessInstanceBuilder().processDefinitionKey("jOB_E_Proc
 //setting a variablr in a flow (Arrow) with turnary operation
 ${execution.setVariable('role', execution.getVariable('condition') == 'someValue' ? 'val1' : 'val2')}
 ${execution.setVariable('isEntry','true')}
-gh
+
 
 //assigning a responder and JEC as assignee in a JOB E joint submission
 ${responder.pyId}
 ${jeConsultant.pyId}
 
-
-//RB defv
-RB 3694 JIM 9242/G6 55/20 145 2P
-
+//cmmn setting a variable  in  a 3.14
+${cmmnRuntimeService.setVariable(root.id, "isDm","Requestor")}
 
 //do sum of subform elements and compare 
 //{{flw.sum(flw.mapAttr(addtionalDuties,'percentage')) == flw.sum(flw.mapAttr(eliminatedDuties,'percentage'))}}

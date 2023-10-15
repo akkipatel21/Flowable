@@ -6,6 +6,10 @@ ${runtimeService.createProcessInstanceBuilder().processDefinitionKey("jOB_E_Proc
 ${execution.setVariable('role', execution.getVariable('condition') == 'someValue' ? 'val1' : 'val2')}
 ${execution.setVariable('isEntry','true')}
 
+//get a response from service registry using an action button
+1.put the action button
+2.use the store response button option in an action button 
+3.use below expression to get the response from the service registry. {{$response.executionPayload.isVisibleF4}}
 
 //assigning a responder and JEC as assignee in a JOB E joint submission
 ${responder.pyId}

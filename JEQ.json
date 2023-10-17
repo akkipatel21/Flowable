@@ -1,680 +1,514 @@
 {
-	"JEQ": {
-		"Factor_1": {
-			"isEdited_F1": true,
-			"F1_Q1": "3",
-			"F1_Ans": "text value",
-			"F1_Q1_Dm": "3_dm",
-			"F1_Ans_Dm": "text value",
-			"F1_Jec_Cmt": "text value",
-			"F1_Inc_Cmt": "text value"
-		},
-		"Factor_2": {
-			"Factor_2C": {
-				"isEdited_F2C": true,
-				"F2c_5": "YES",
-				"F2c_5_Languages": [
-					{
-						"F2c_Q6_2a": [
-							"O"
-						],
-						"F2c_Q6_2b": [
-							"O"
-						],
-						"F2c_Q6_2c": [
-							"R"
-						],
-						"F2c_Q6_3a": [
-							"R"
-						],
-						"F2c_Q6_3b": [
-							"O"
-						],
-						"F2c_Q6_3c": [
-							"R"
-						],
-						"F2c_Q6_4a": [
-							"F"
-						],
-						"F2c_Q6_4b": [
-							"R"
-						],
-						"F2c_Q6_4c": [
-							"R"
-						],
-						"language": "Farsi",
-						"why": "some text"
-					},
-					{
-						"F2c_Q6_2a": [
-							"O"
-						],
-						"F2c_Q6_2b": [
-							"R"
-						],
-						"F2c_Q6_2c": [
-							"O"
-						],
-						"F2c_Q6_3a": [
-							"R"
-						],
-						"F2c_Q6_3b": [],
-						"F2c_Q6_3c": [
-							"F"
-						],
-						"F2c_Q6_4a": [
-							"R"
-						],
-						"F2c_Q6_4b": [],
-						"F2c_Q6_4c": [
-							"F"
-						],
-						"language": "German",
-						"why": "some text"
-					}
+	"Factor_8": {
+		"jjecRating": "5",
+		"Factor_8B": {
+			"isEdited": true,
+			"INC": {
+				"Q13_L2": [
+					"5b",
+					"6"
 				],
-				"other_languages": [
-					{
-						"F2c_Q6_2a": [
-							"O"
-						],
-						"F2c_Q6_2b": [
-							"R"
-						],
-						"F2c_Q6_2c": [
-							"F"
-						],
-						"F2c_Q6_3a": [
-							"F"
-						],
-						"F2c_Q6_3b": [
-							"O"
-						],
-						"F2c_Q6_3c": [
-							"R"
-						],
-						"F2c_Q6_4a": [
-							"F"
-						],
-						"F2c_Q6_4b": [
-							"R"
-						],
-						"F2c_Q6_4c": [
-							"O"
-						],
-						"language": "Gujarati",
-						"why": "reason"
-					},
-					{
-						"F2c_Q6_2a": [
-							"F"
-						],
-						"F2c_Q6_2b": [
-							"F"
-						],
-						"F2c_Q6_2c": [
-							"F"
-						],
-						"F2c_Q6_3a": [
-							"F"
-						],
-						"F2c_Q6_3b": [
-							"F"
-						],
-						"F2c_Q6_3c": [
-							"F"
-						],
-						"F2c_Q6_4a": [
-							"F"
-						],
-						"F2c_Q6_4b": [
-							"F"
-						],
-						"F2c_Q6_4c": [
-							"F"
-						],
-						"language": "hindi",
-						"why": "reson"
-					}
+				"Q13_L1": [
+					"1",
+					"2",
+					"3a",
+					"3c"
 				],
-				"F2c_Ans": "text value",
-				"F2c_5_Dm": "YES",
-				"F2c_Jec_Cmt": "text value",
-				"F2c_5_Languages_Dm": [
-					{
-						"F2c_Q6_2a": [
-							"O"
-						],
-						"F2c_Q6_2b": [
-							"R"
-						],
-						"F2c_Q6_2c": [
-							"R"
-						],
-						"F2c_Q6_3a": [
-							"R"
-						],
-						"F2c_Q6_3b": [
-							"R"
-						],
-						"F2c_Q6_3c": [
-							"R"
-						],
-						"F2c_Q6_4a": [
-							"O"
-						],
-						"F2c_Q6_4b": [
-							"R"
-						],
-						"F2c_Q6_4c": [
-							"R"
-						],
-						"language": "Arabic",
-						"why": "reason"
-					}
-				],
-				"other_languages_Dm": [
-					{
-						"F2c_Q6_2a": [
-							"O"
-						],
-						"F2c_Q6_2b": [
-							"R"
-						],
-						"F2c_Q6_2c": [
-							"F"
-						],
-						"F2c_Q6_3a": [
-							"F"
-						],
-						"F2c_Q6_3b": [
-							"O"
-						],
-						"F2c_Q6_3c": [
-							"R"
-						],
-						"F2c_Q6_4a": [
-							"F"
-						],
-						"F2c_Q6_4b": [
-							"R"
-						],
-						"F2c_Q6_4c": [
-							"O"
-						],
-						"language": "Gujarati",
-						"why": "reason"
-					},
-					{
-						"F2c_Q6_2a": [
-							"F"
-						],
-						"F2c_Q6_2b": [
-							"F"
-						],
-						"F2c_Q6_2c": [
-							"F"
-						],
-						"F2c_Q6_3a": [
-							"F"
-						],
-						"F2c_Q6_3b": [
-							"F"
-						],
-						"F2c_Q6_3c": [
-							"F"
-						],
-						"F2c_Q6_4a": [
-							"F"
-						],
-						"F2c_Q6_4b": [
-							"F"
-						],
-						"F2c_Q6_4c": [
-							"F"
-						],
-						"language": "hindi",
-						"why": "reson"
-					}
-				],
-				"F2c_Ans_Dm": "text value"
+				"Q13_3c": "text",
+				"exp": "text",
+				"cmt": "text"
 			},
-			"Factor_2B": {
-				"isEdited_F2B": true,
-				"F2b_Q4_1a": [
-					"O"
+			"DM": {
+				"Q13_L2": [
+					"3d",
+					"5b",
+					"7"
 				],
-				"F2b_Q4_1b": [
-					"R"
+				"Q13_L1": [
+					"2",
+					"3b",
+					"3c"
 				],
-				"F2b_Q4_2": [
-					"O"
-				],
-				"F2b_Q4_3": [
-					"R"
-				],
-				"F2b_Q4_4": [
-					"O"
-				],
-				"F2b_Q4_5a": [
-					"O"
-				],
-				"F2b_Q4_5b": [
-					"O"
-				],
-				"F2b_Q4_6": [
-					"O"
-				],
-				"F2b_Q4_7a": [
-					"O"
-				],
-				"F2b_Q4_7b": [
-					"O"
-				],
-				"F2b_Q4_8": [
-					"O"
-				],
-				"F2b_Q4_9": [
-					"O"
-				],
-				"F2b_Q4_1a_Dm": [
-					"O"
-				],
-				"F2b_Q4_1b_Dm": [
-					"R"
-				],
-				"F2b_Q4_2_Dm": [
-					"O"
-				],
-				"F2b_Q4_3_Dm": [
-					"R"
-				],
-				"F2b_Q4_4_Dm": [
-					"F"
-				],
-				"F2b_Q4_5a_Dm": [
-					"R"
-				],
-				"F2b_Q4_5b_Dm": [
-					"F"
-				],
-				"F2b_Q4_6_Dm": [
-					"R"
-				],
-				"F2b_Q4_7a_Dm": [
-					"F"
-				],
-				"F2b_Q4_7b_Dm": [
-					"R"
-				],
-				"F2b_Q4_8_Dm": [
-					"R"
-				],
-				"F2b_Q4_9_Dm": [
-					"R"
-				],
-				"F2b_Ans": "text value",
-				"F2b_Ans_Dm": "text value",
-				"F2b_Jec_Cmt": "text value",
-				"F2b_Inc_Cmt": "text value"
+				"Q13_3c": "text",
+				"exp": "text"
 			},
-			"Factor_2A": {
-				"isEdited_F2A": true,
-				"F2a_Q3_1": [
-					"O"
-				],
-				"F2a_Q3_2": [
-					"R"
-				],
-				"F2a_Q3_3a": [
-					"F"
-				],
-				"F2a_Q3_3b": [
-					"F"
-				],
-				"F2a_Q3_4": [
-					"R"
-				],
-				"F2a_Q3_5a": [
-					"O"
-				],
-				"F2a_Q3_5b": [
-					"R"
-				],
-				"F2a_Q3_5c": [
-					"F"
-				],
-				"F2a_Q3_6": [
-					"R"
-				],
-				"F2a_Q3_7": [
-					"F"
-				],
-				"F2a_Q3_8": [
-					"R"
-				],
-				"F2a_Q3_9": [
-					"R"
-				],
-				"F2a_Q3_1_Dm": [
-					"O"
-				],
-				"F2a_Q3_2_Dm": [
-					"R"
-				],
-				"F2a_Q3_3a_Dm": [
-					"O"
-				],
-				"F2a_Q3_3b_Dm": [
-					"O"
-				],
-				"F2a_Q3_4_Dm": [
-					"R"
-				],
-				"F2a_Q3_5a_Dm": [
-					"R"
-				],
-				"F2a_Q3_5b_Dm": [
-					"F"
-				],
-				"F2a_Q3_5c_Dm": [
-					"R"
-				],
-				"F2a_Q3_6_Dm": [
-					"R"
-				],
-				"F2a_Q3_7_Dm": [
-					"R"
-				],
-				"F2a_Q3_8_Dm": [
-					"R"
-				],
-				"F2a_Q3_9_Dm": [
-					"R"
-				],
-				"F2a_Q2": "3",
-				"F2a_Ans": "text value",
-				"F2a_Q2_Dm": "2",
-				"F2a_Ans_Dm": "text value",
-				"F2a_Jec_Cmt": "text value",
-				"F2a_Inc_Cmt": "text value"
-			}
+			"JecCmt": "text"
 		},
-		"Factor_3": {
-			"isEdited_F3": true,
-			"F3_Q7": "3",
-			"F3_Q7_Ans": "text value",
-			"F3_Q7_Dm": "2",
-			"F3_Q7_Ans_Dm": "text value",
-			"F3_Jec_Cmt": "text value",
-			"F3_Inc_Cmt": "text value"
+		"Factor_8A": {
+			"isEdited": true,
+			"INC": {
+				"Q12_L1": [
+					"1",
+					"2"
+				],
+				"Q12_L2": [
+					"3a",
+					"3b"
+				],
+				"Q12_L3": [
+					"3c",
+					"3d"
+				],
+				"Q12_L4": [
+					"3e",
+					"3f"
+				],
+				"Q12_L6": [
+					"5a"
+				],
+				"Q12_L7": [
+					"5b",
+					"5c",
+					"6",
+					"7a",
+					"7b",
+					"7c"
+				],
+				"Q12_3b": "text",
+				"Q12_L5": [
+					"4"
+				],
+				"Q12_3d": "text",
+				"Q12_5a": "text",
+				"exp": "text",
+				"cmt": "text"
+			},
+			"DM": {
+				"Q12_L1": [
+					"1"
+				],
+				"Q12_L2": [
+					"3a",
+					"3b"
+				],
+				"Q12_L3": [
+					"3d"
+				],
+				"Q12_L4": [],
+				"Q12_L6": [
+					"5a"
+				],
+				"Q12_L7": [
+					"5b",
+					"5c",
+					"7b",
+					"7c"
+				],
+				"Q12_3b": "text",
+				"Q12_L5": [
+					"4"
+				],
+				"Q12_3d": "text",
+				"Q12_5a": "text",
+				"exp": "text"
+			},
+			"jecCmt": "text"
+		}
+	},
+	"Factor_7": {
+		"DM": {
+			"peoplel": 12,
+			"Q11": "2",
+			"exp": "text",
+			"group": "4",
+			"time": "text",
+			"occasion": "text"
 		},
-		"Factor_4": {
-			"isEdited_F4": true,
-			"F4_Q8_sub_Lvl1": [
+		"INC": {
+			"peoplel": null,
+			"cmt": "text",
+			"Q11": "5",
+			"group": "3",
+			"exp": "text"
+		},
+		"isEdited": true,
+		"jjecRating": "5",
+		"jecCmt": "text"
+	},
+	"Factor_6": {
+		"isEdited": true,
+		"jjecRating": "5",
+		"INC": {
+			"cmt": "text",
+			"Q10": "7",
+			"exp": "text"
+		},
+		"DM": {
+			"Q10": "2",
+			"exp": "text"
+		},
+		"jecCmt": "text"
+	},
+	"Factor_5": {
+		"isEdited": true,
+		"jjecRating": "12",
+		"INC": {
+			"Q9": "3",
+			"exp": "text",
+			"cmt": "text"
+		},
+		"DM": {
+			"Q9": "7",
+			"exp": "text"
+		},
+		"jecCmt": "text"
+	},
+	"Factor_4": {
+		"isEdited": true,
+		"jjecRating": "5",
+		"INC": {
+			"Q8_L1": [
 				"1",
 				"2"
 			],
-			"F4_Q8_sub_Lvl2": [
-				"3a",
+			"Q8_L2": [
 				"3b",
-				"3c",
 				"3d",
 				"3e",
-				"3f",
-				"3g"
+				"3f"
 			],
-			"F4_Q8_sub_Lvl4": [
+			"Q8_L4": [
+				"5b",
+				"5e",
+				"5g",
+				"5f"
+			],
+			"Q8_L6": [
+				"7b",
+				"7d",
+				"7e",
+				"7f"
+			],
+			"Q8_L8": [
+				"9"
+			],
+			"Q8_L3": [
+				"4"
+			],
+			"Q8_L5": [
+				"6"
+			],
+			"openModal": true,
+			"Q8_L7": [
+				"8"
+			],
+			"exp": "text",
+			"cmt": "text"
+		},
+		"DM": {
+			"Q8_L1": [
+				"1",
+				"2"
+			],
+			"Q8_L2": [
+				"3a",
+				"3c",
+				"3b",
+				"3d"
+			],
+			"Q8_L4": [
 				"5a",
 				"5b",
 				"5c",
 				"5d"
 			],
-			"F4_Q8_sub_Lvl6": [
+			"Q8_L6": [
+				"7a",
+				"7d",
 				"7e",
-				"7b",
-				"7c"
+				"7g"
 			],
-			"F4_Q8_sub_Lvl8": [],
-			"F4_Q8_sub_Lvl1_Dm": [
-				"1",
-				"2"
+			"Q8_L8": [
+				"9"
 			],
-			"F4_Q8_sub_Lvl2_Dm": [
-				"3b",
-				"3d",
-				"3f"
+			"openModal": true,
+			"Q8_L3": [
+				"4"
 			],
-			"F4_Q8_sub_Lvl4_Dm": [
-				"5a"
+			"Q8_L5": [
+				"6"
 			],
-			"F4_Q8_sub_Lvl6_Dm": [
-				"7d",
-				"7e"
+			"Q8_L7": [
+				"8"
 			],
-			"F4_Q8_sub_Lvl8_Dm": [],
-			"F4_Q8_Inc": [
-				"2",
-				"1",
-				"3e",
-				"3f",
-				"3d",
-				"5d",
-				"5f",
-				"7b"
-			],
-			"add_Dm_Ans": false,
-			"F4_Q8_Dm": [
-				"1",
-				"2",
-				"3b",
-				"3d",
-				"3f",
-				"5a",
-				"7d",
-				"7e"
-			],
-			"F4_Q8_sub_Lvl3": [],
-			"F4_Q8_sub_Lvl5": [],
-			"F4_Q8_Ans": "text value",
-			"F4_Q8_Ans_Dm": "text value",
-			"F4_Inc_Cmt": "text value"
+			"exp": "text"
 		},
-		"Factor_5": {
-			"isEdited_F5": true,
-			"F5_Q9": "2",
-			"F5_Q9_Ans": "text value",
-			"F5_Q9_Dm": "3",
-			"F5_Q9_Ans_Dm": "text value",
-			"F5_Jec_Cmt": "text value",
-			"F5_Inc_Cmt": "text value"
+		"jecCmt": "text"
+	},
+	"Factor_3": {
+		"isEdited": true,
+		"jjecRating": "5",
+		"INC": {
+			"Q7": "2",
+			"exp": "text",
+			"cmt": "text"
 		},
-		"Factor_6": {
-			"isEdited_F6": true,
-			"F6_Q10": "4",
-			"F6_Q10_Ans": "text value",
-			"F6_Q10_Ans_Dm": "text value",
-			"F6_Q10_Dm": "2",
-			"F6_Jec_Cmt": "text value",
-			"F6_Inc_Cmt": "text value"
+		"DM": {
+			"Q7": "7",
+			"exe": "text"
 		},
-		"Factor_7": {
-			"F7B_Q11_Ppl_Dm": null,
-			"F7B_Q11_Ppl": 12,
-			"isEdited_F7": true,
-			"F7B_Q11": "3",
-			"F7B_Q11_time": "3 months",
-			"F7B_Q11_Occasion": "text value",
-			"F7B_Q11_Ans": "text value",
-			"F7B_Q11_Dm": "6",
-			"F7B_Q11_Ans_Dm": "text value",
-			"F7_Inc_Cmt": "text value",
-			"F7B_Jec_Cmt": "text value",
-			"F7B_Q11_Grp_Dm": "3"
-		},
-		"Factor_8": {
-			"Factor_8A": {
-				"isEdited_F8A": true,
-				"F8A_sub_Lvl1": [
-					"1",
-					"2"
+		"jecCmt": "text"
+	},
+	"Factor_2": {
+		"Factor_2C": {
+			"isEdited": true,
+			"jjecRating": "5",
+			"INC": {
+				"Q5": "YES",
+				"Q6": [
+					{
+						"Q6_2a": [
+							"R"
+						],
+						"Q6_2b": [
+							"R"
+						],
+						"Q6_2c": [
+							"F"
+						],
+						"Q6_3a": [
+							"R"
+						],
+						"Q6_3b": [
+							"F"
+						],
+						"Q6_3c": [
+							"R"
+						],
+						"Q6_4a": [
+							"R"
+						],
+						"Q6_4b": [
+							"F"
+						],
+						"Q6_4c": [
+							"R"
+						],
+						"language": "Japanese",
+						"why": "text"
+					},
+					{
+						"Q6_2a": [
+							"F"
+						],
+						"Q6_2b": [
+							"R"
+						],
+						"Q6_2c": [
+							"F"
+						],
+						"Q6_3a": [
+							"F"
+						],
+						"Q6_3b": [
+							"R"
+						],
+						"Q6_3c": [
+							"F"
+						],
+						"Q6_4a": [
+							"R"
+						],
+						"Q6_4b": [
+							"R"
+						],
+						"Q6_4c": [
+							"F"
+						],
+						"language": "Other",
+						"otherLanguage": "eng",
+						"why": "text"
+					}
 				],
-				"F8A_sub_Lvl2": [
-					"3a",
-					"3b"
-				],
-				"F8A_sub_Lvl3": [
-					"3c",
-					"3d"
-				],
-				"F8A_sub_Lvl4": [
-					"3e",
-					"3f"
-				],
-				"F8A_sub_Lvl6": [
-					"5a"
-				],
-				"F8A_sub_Lvl7": [
-					"5b",
-					"5c",
-					"6",
-					"7a",
-					"7b",
-					"7c"
-				],
-				"F8A_sub_Lvl1_Dm": [
-					"1",
-					"2"
-				],
-				"F8A_sub_Lvl2_Dm": [
-					"3a",
-					"3b"
-				],
-				"F8A_sub_Lvl3_Dm": [
-					"3c",
-					"3d"
-				],
-				"F8A_sub_Lvl4_Dm": [
-					"3e",
-					"3f"
-				],
-				"F8A_sub_Lvl6_Dm": [
-					"5a"
-				],
-				"F8A_sub_Lvl7_Dm": [
-					"5b",
-					"5c",
-					"6",
-					"7a",
-					"7b",
-					"7c"
-				],
-				"callAddList": false,
-				"callAddList_Dm": true,
-				"F8A_Q12_Inc": [
-					"1",
-					"2",
-					"3a",
-					"3b",
-					"3c",
-					"3d",
-					"3e",
-					"3f",
-					"4",
-					"5a",
-					"5b",
-					"5c",
-					"6",
-					"7a",
-					"7b",
-					"7c"
-				],
-				"F8A_Q12_Dm": [
-					"1",
-					"2",
-					"3a",
-					"3b",
-					"3c",
-					"3d",
-					"3e",
-					"3f",
-					"4",
-					"5a",
-					"5b",
-					"5c",
-					"6",
-					"7a",
-					"7b",
-					"7c"
-				],
-				"F8A_Q12_3b_Ans": "text value",
-				"F8A_sub_Lvl5": [
-					"4"
-				],
-				"F8A_Q12_3d_Ans": "text value",
-				"F8A_Q12_5a_Ans": "text value",
-				"F8A_Q12_Ans": "text value",
-				"F8A_Q12_3b_Ans_Dm": "text value",
-				"F8A_sub_Lvl5_Dm": [
-					"4"
-				],
-				"F8A_Q12_3d_Ans_Dm": "text value",
-				"F8A_Q12_5a_Ans_Dm": "text value",
-				"F8A_Q12_Ans_Dm": "text value"
+				"cmt": "text"
 			},
-			"Factor_8B": {
-				"isEdited_F8B": true,
-				"F8B_sub_Lvl1": [
-					"1",
-					"2",
-					"3a",
-					"3b",
-					"3c"
+			"DM": {
+				"Q5": "NO"
+			},
+			"JecCmt": "text"
+		},
+		"Factor_2B": {
+			"isEdited": true,
+			"INC": {
+				"Q4_1a": [
+					"O"
 				],
-				"F8B_Sub_Lvl2": [
-					"3d",
-					"5b",
-					"7",
-					"6"
+				"Q4_1b": [
+					"R"
 				],
-				"F8B_sub_Lvl1_Dm": [
-					"2",
-					"1",
-					"3a"
+				"Q4_2": [
+					"F"
 				],
-				"F8B_sub_Lvl2_Dm": [
-					"5a"
+				"Q4_3": [
+					"R"
 				],
-				"add_Inc_Ans": false,
-				"add_Dm_Ans": true,
-				"F8B_Q13_Inc": [
-					"1",
-					"2",
-					"3a",
-					"3b",
-					"3c",
-					"3d",
-					"5b",
-					"7",
-					"6"
+				"Q4_4": [
+					"F"
 				],
-				"F8B_Q13_Dm": [
-					"1",
-					"2",
-					"3a",
-					"3b",
-					"3c",
-					"3d",
-					"5a",
-					"7",
-					"6"
+				"Q4_5a": [
+					"R"
 				],
-				"F8B_Q13_3c_Ans": "text value",
-				"F8B_Q13_3c_Ans_Dm": "text value",
-				"F8B_Q13_Ans": "text value",
-				"F8B_Q13_Ans_Dm": "text value",
-				"F8B_Inc_Cmt": "text value"
-			}
+				"Q4_5b": [
+					"F"
+				],
+				"Q4_6": [
+					"F"
+				],
+				"Q4_7a": [
+					"F"
+				],
+				"Q4_7b": [
+					"R"
+				],
+				"Q4_8": [
+					"F"
+				],
+				"Q4_9": [
+					"F"
+				],
+				"exp": "text",
+				"cmt": "text"
+			},
+			"DM": {
+				"Q4_1a": [
+					"R"
+				],
+				"Q4_1b": [
+					"R"
+				],
+				"Q4_2": [
+					"R"
+				],
+				"Q4_3": [
+					"R"
+				],
+				"Q4_4": [
+					"R"
+				],
+				"Q4_5a": [
+					"R"
+				],
+				"Q4_5b": [
+					"F"
+				],
+				"Q4_6": [
+					"R"
+				],
+				"Q4_7a": [
+					"F"
+				],
+				"Q4_7b": [
+					"F"
+				],
+				"Q4_8": [
+					"F"
+				],
+				"Q4_9": [
+					"F"
+				],
+				"exp": "text"
+			},
+			"jecCmt": "text"
+		},
+		"Factor_2A": {
+			"isEdited": true,
+			"jjecRating": "5",
+			"INC": {
+				"Q3_1": [
+					"R"
+				],
+				"Q3_2": [
+					"F"
+				],
+				"Q3_3a": [
+					"R"
+				],
+				"Q3_3b": [
+					"F"
+				],
+				"Q3_4": [
+					"R"
+				],
+				"Q3_5a": [
+					"O"
+				],
+				"Q3_5b": [
+					"O"
+				],
+				"Q3_5c": [
+					"O"
+				],
+				"Q3_6": [
+					"O"
+				],
+				"Q3_7": [
+					"O"
+				],
+				"Q3_8": [
+					"R"
+				],
+				"Q3_9": [
+					"R"
+				],
+				"Q2": "3",
+				"exp": "text",
+				"cmt": "text"
+			},
+			"DM": {
+				"Q3_1": [
+					"R"
+				],
+				"Q3_2": [
+					"F"
+				],
+				"Q3_3a": [
+					"F"
+				],
+				"Q3_3b": [
+					"R"
+				],
+				"Q3_4": [
+					"R"
+				],
+				"Q3_5a": [
+					"F"
+				],
+				"Q3_5b": [
+					"F"
+				],
+				"Q3_5c": [
+					"R"
+				],
+				"Q3_6": [
+					"F"
+				],
+				"Q3_7": [
+					"R"
+				],
+				"Q3_8": [
+					"R"
+				],
+				"Q3_9": [
+					"F"
+				],
+				"Q2": "5",
+				"exp": "text"
+			},
+			"jecCmt": "text"
 		}
+	},
+	"Factor_1": {
+		"isEdited": true,
+		"jjecRating": "5",
+		"INC": {
+			"Q1": "2",
+			"exp": "text",
+			"cmt": "text"
+		},
+		"DM": {
+			"Q1": "5",
+			"exp": "text"
+		},
+		"jecCmt": "text"
 	}
 }

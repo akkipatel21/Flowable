@@ -17,6 +17,7 @@ ${jeConsultant.pyId}
 
 //cmmn setting a variable  in  a CMMN TASK
 ${cmmnRuntimeService.setVariable(root.id, "isDm","Requestor")}
+${cmmnRuntimeService.setVariable(root.id, "isEntry", '$payload.var1'  == "akash" ? "true" : "false")}
 
 //do sum of subform elements and compare 
 //{{flw.sum(flw.mapAttr(addtionalDuties,'percentage')) == flw.sum(flw.mapAttr(eliminatedDuties,'percentage'))}}

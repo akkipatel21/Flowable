@@ -23,6 +23,9 @@ ${cmmnRuntimeService.setVariable(root.id, "isEntry", '$payload.var1'  == "akash"
 //{{flw.sum(flw.mapAttr(addtionalDuties,'percentage')) == flw.sum(flw.mapAttr(eliminatedDuties,'percentage'))}}
 {{  flw.sum(flw.mapAttr(SoSCF.addtionalDuties,'percentage'))<='100' &&   flw.sum(flw.mapAttr(SoSCF.addtionalDuties,'percentage')) == flw.sum(flw.mapAttr(SoSCF.eliminatedDuties,'percentage')) && flw.exists(SoSCF.prCmtForJobChange) && flw.exists(SoSCF.prCmtForAdditionalDetails) && flw.exists(SoSCF.prCmtForRevision) }}
 
+abcd efg
+
+
 //check if there is an element available in the list
  "array": [
     "3c",

@@ -26,7 +26,8 @@ ${cmmnRuntimeService.setVariable(root.id, "isEntry", '$payload.var1'  == "akash"
 {{  flw.sum(flw.mapAttr(SoSCF.addtionalDuties,'percentage'))<='100' &&   flw.sum(flw.mapAttr(SoSCF.addtionalDuties,'percentage')) == flw.sum(flw.mapAttr(SoSCF.eliminatedDuties,'percentage')) && flw.exists(SoSCF.prCmtForJobChange) && flw.exists(SoSCF.prCmtForAdditionalDetails) && flw.exists(SoSCF.prCmtForRevision) }}
 
 akash patel
-//put custom validation if the multiselection has more than 1 value
+//put custom validation if the multiselection has more than 1 value and has DM selected in it
+{{(parent.roleManager.role.length<='1' || !flw.in(parent.roleManager.role,'dm'))}}
 
 //check if there is an element available in the list
  "array": [

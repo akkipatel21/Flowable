@@ -1,0 +1,70 @@
+CREATE DEFINER=`root`@`%` PROCEDURE `Get_PERSON_BY_ROLE`(IN caseId INT, IN roleName varchar(50), OUT response JSON)
+BEGIN
+    DECLARE json TEXT DEFAULT '';
+
+    IF roleName = 'incumbent' THEN
+        SELECT JSON_OBJECT(
+            'id', ID,
+            'caseId', CASE_ID,
+            'pyId', PYID,
+            'firstName', FIRST_NM, 
+            'lastName', LAST_NM, 
+            'email', EMAIL,
+            'affiliation', AFFILIATION,
+            'pcn', PCN,
+            'isIncumbent', IS_INCUMBENT=1, cast(TRUE as json), cast(FALSE as json),
+            'isDM', IS_DM=1, cast(TRUE as json), cast(FALSE as json),
+            'isJEStaff', IS_JE_STAFF=1, cast(TRUE as json), cast(FALSE as json),
+            'isJEConsultant', IS_JE_CONSULTANT=1, cast(TRUE as json), cast(FALSE as json),
+            'isRequestor', IS_REQUESTOR=1, cast(TRUE as json), cast(FALSE as json)
+        ) INTO json
+        FROM JECS_112.PERSON
+        WHERE JECS_112.PERSON.CASE_ID = caseId AND JECS_112.PERSON.IS_INCUMBENT = 1;
+    ELSEIF roleName = 'DM' THEN
+        SELECT JSON_OBJECT(
+            'id', ID,
+            'caseId', CASE_ID,
+            'pyId', PYID,
+            'firstName', FIRST_NM, 
+            'lastName', LAST_NM, 
+            'email', EMAIL,
+            'affiliation', AFFILIATION,
+            'pcn', PCN,
+            'isIncumbent', IS_INCUMBENT=1, cast(TRUE as json), cast(FALSE as json),
+            'isDM', IS_DM=1, cast(TRUE as json), cast(FALSE as json),
+            'isJEStaff', IS_JE_STAFF=1, cast(TRUE as json), cast(FALSE as json),
+            'isJEConsultant', IS_JE_CONSULTANT=1, cast(TRUE as json), cast(FALSE as json),
+            'isRequestor', IS_REQUESTOR=1, cast(TRUE as json), cast(FALSE as json)
+        ) INTO json
+        FROM JECS_112.PERSON
+        WHERE JECS_112.PERSON.CASE_ID = caseId AND JECS_112.PERSON.IS_DM = 1;
+    ELSEIF roleName = 'JEC' THEN
+        SELECT JSON_OBJECT(
+            'id', ID,
+            'caseId', CASE_ID,
+            'pyId', PYID,
+            'firstName', FIRST_NM, 
+            'lastName', LAST_NM, 
+            'email', EMAIL,
+            'affiliation', AFFILIATION,
+            'pcn', PCN,
+            'isIncumbent', IS_INCUMBENT=1, cast(TRUE as json), cast(FALSE as json),
+            'isDM', IS_DM=1, cast(TRUE as json), cast(FALSE as json),
+            'isJEStaff', IS_JE_STAFF=1, cast(TRUE as json), cast(FALSE as json),
+            'isJEConsultant', IS_JE_CONSULTANT=1, cast(TRUE as json), cast(FALSE as json),
+            'isRequestor', IS_REQUESTOR=1, cast(TRUE as json), cast(FALSE as json)
+        ) INTO json
+        FROM JECS_112.PERSON
+        WHERE JECS_112.PERSON.CASE_ID = caseId AND JECS_112.PERSON.IS_JE_CONSULTANT = 1;
+    ELSE
+        SET json = JSON_OBJECT();
+    END IF;
+
+    IF json = '' THEN
+        SET json = JSON_OBJECT();
+    END IF;
+
+    SET response = json;
+    SELECT response;
+    
+END

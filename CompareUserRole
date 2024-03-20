@@ -1,5 +1,5 @@
 import com.fasterxml.jackson.databind.JsonNode
-S
+S CTRL+S
 // Retrieve the extensionApprover value from the execution variable
 JsonNode extensionApprover = execution.getVariable("extensionApprover")
 

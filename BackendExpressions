@@ -31,4 +31,4 @@ akash patel
  "array": [
     "3c",
     "3d"
-  ]           -----    {{ flw.in(array, '3c') }}rrr
+  ]           -----    {{ flw.in(array, '3c') }}

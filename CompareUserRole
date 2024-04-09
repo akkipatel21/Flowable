@@ -10,7 +10,7 @@ JsonNode assignment = execution.getVariable("assignment")
 String approver = extensionApprover.get(0).get("extensionApprover").asText()
 
 // Find the matching role in the assignment and retrieve the pyIds
-// Find the matching role in the assignmen9t and retrieve the pyIds
+// Find the matching role in the assignment and retrieve the pyIds
 List<String> pyIds = []
 assignment.each { node ->
     String role = node.get("role").asText()

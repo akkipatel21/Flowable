@@ -29,6 +29,6 @@ akash patel
 
 //check if there is an element available in the list
  "array": [
-    "3c",
+    "3c","35",
     "3d"
   ]           -----    {{ flw.in(array, '3c') }}

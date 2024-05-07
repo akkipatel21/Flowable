@@ -5,7 +5,7 @@ ${runtimeService.createProcessInstanceBuilder().processDefinitionKey("jOB_E_Proc
 //setting a variablr in a flow (Arrow) with turnary operation
 ${execution.setVariable('role', execution.getVariable('condition') == 'someValue' ? 'val1' : 'val2')}
 ${execution.setVariable('isEntry','true')}
-ff
+
 //get a response from service registry using an action button
 1.put the action button
 2.use the store response button option in an action button 

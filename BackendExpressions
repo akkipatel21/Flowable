@@ -1,3 +1,5 @@
+{{((oldRecord==0) && (!provisionallyRated)) || (createNew==false)}}
+
 {{(flw.exists(rowSelected) && flw.exists(oldRecord) && !isComingFromReview) || (flw.exists(isChecked) && !isChecked && !isComingFromReview) || (!modify && !isChecked && (flw.exists(rowSelected)) && !rowSelected && !isComingFromReview) && (flw.exists(jea) && jea==true) && !createNew && oldRecord!=null}}
 
 

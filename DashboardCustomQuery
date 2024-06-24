@@ -1,0 +1,34 @@
+<#ftl output_format="JSON"> 
+{
+  "from": "${start}",
+  "size": "${size}",
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "caseDefinitionKey": "jECS_112_Case_Job_Evaluation6" } }
+		<#if filter?has_content && filter == "mine">,
+        {
+          "nested": {
+            "path": "variables",
+            "query": {
+              "bool": {
+                "must": [
+                  { "term": { "variables.name": "usersInvolved" } },
+                  { "match": { "variables.textValue": "${currentUserId}" } }
+                ]
+              }
+            }
+          }
+        }
+		</#if>
+      ]
+    }
+  },
+  "sort": [
+    {
+      "startTime": {
+        "order": "asc"
+      }
+    }
+  ]
+}

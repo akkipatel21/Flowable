@@ -3,7 +3,7 @@
 {{(flw.exists(rowSelected) && flw.exists(oldRecord) && !isComingFromReview) || (flw.exists(isChecked) && !isChecked && !isComingFromReview) || (!modify && !isChecked && (flw.exists(rowSelected)) && !rowSelected && !isComingFromReview) && (flw.exists(jea) && jea==true) && !createNew && oldRecord!=null}}
 
 
-//starting a new process using taskListenerhjk
+//starting a new process using taskListener
 ${runtimeService.createProcessInstanceBuilder().processDefinitionKey("myCaseKey").variable("myvariable", "something").start()}
 ${runtimeService.createProcessInstanceBuilder().processDefinitionKey("jOB_E_Process_StartingProcessUsingTaskListeners").variable("pyIds", pyIds).variable("taskId", task.getId()).start()}
 
